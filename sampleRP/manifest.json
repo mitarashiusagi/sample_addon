@@ -1,0 +1,22 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "pack.description",
+        "name": "pack.name",
+        "uuid": "0a9f2fa9-eff2-4ff3-ad3a-745ba734b6ef",
+        "version": [ 1, 0, 0],
+        "min_engine_version": [ 1, 20, 40 ]
+    },
+    "modules": [
+        {
+            "description": "resource pack",
+            "type": "resources",
+            "uuid": "406cacf2-7460-430d-ba19-3c310325f781",
+            "version": [ 1, 0, 0]
+        }
+    ],
+    "metadata": {
+        "authors": [ "mitarashiusagi" ],
+        "url": "https://mitarashiusaginouraniwa.com/"
+    }
+}

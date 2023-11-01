@@ -1,0 +1,28 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "pack.description",
+        "name": "pack.name",
+        "uuid": "95af327d-45f2-4a15-be4a-cc9c960530c6",
+        "version": [ 1, 0, 0 ],
+        "min_engine_version": [ 1, 20, 40 ]
+    },
+    "modules": [
+        {
+            "description": "behavior pack",
+            "type": "data",
+            "uuid": "2b8df4b1-08d6-464c-9b38-0468c2ad76a4",
+            "version": [1, 0, 0]
+        }
+    ],
+    "dependencies": [
+        {
+            "uuid": "0a9f2fa9-eff2-4ff3-ad3a-745ba734b6ef",
+            "version": [1, 0, 0]
+        }
+    ],
+    "metadata": {
+        "authors": [ "mitarashiusagi" ],
+        "url": "https://mitarashiusaginouraniwa.com/"
+    }
+}

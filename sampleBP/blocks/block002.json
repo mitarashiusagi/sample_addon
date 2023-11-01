@@ -1,0 +1,41 @@
+{
+    "format_version": "1.20.30",
+    "minecraft:block": {
+        "description": {
+            "identifier": "sample:block002",
+            "menu_category": {
+                "category": "construction"
+            }
+        },
+        "components": {
+            "minecraft:unit_cube": {},
+            "minecraft:loot": "loot_tables/blocks/block002.json",
+            "minecraft:material_instances": {
+                "up": {
+                    "texture": "up",
+                    "render_method": "blend"
+                },
+                "down": {
+                    "texture": "down",
+                    "render_method": "blend"
+                },
+                "north": {
+                    "texture": "north",
+                    "render_method": "blend"
+                },
+                "east": {
+                    "texture": "east",
+                    "render_method": "blend"
+                },
+                "south": {
+                    "texture": "south",
+                    "render_method": "blend"
+                },
+                "west": {
+                    "texture": "west",
+                    "render_method": "blend"
+                }
+            }
+        }
+    }
+}

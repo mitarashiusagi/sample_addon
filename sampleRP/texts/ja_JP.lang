@@ -1,0 +1,7 @@
+pack.name=サンプルアドオンRP
+pack.description=アドオン説明
+
+
+tile.sample:block001.name=ブロック001
+tile.sample:block002.name=ブロック002
+tile.sample:block003.name=ブロック003

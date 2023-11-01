@@ -1,0 +1,380 @@
+{
+    "format_version": "1.20.30",
+    "minecraft:block": {
+        "description": {
+            "identifier": "sample:block005",
+            "menu_category": {
+                "category": "construction"
+            },
+            "states": {
+                "sample:north": [0, 1],
+                "sample:south": [0, 1],
+                "sample:east": [0, 1],
+                "sample:west": [0, 1]
+            }
+        },
+        "components": {
+            "minecraft:unit_cube": {},
+            "minecraft:loot": "loot_tables/blocks/block005.json",
+            "minecraft:material_instances": {
+                "up": {
+                    "texture": "block005",
+                    "render_method": "opaque"
+                },
+                "*": {
+                    "texture": "white",
+                    "render_method": "opaque"
+                }
+            },
+            "minecraft:queued_ticking": {
+                "looping": true,
+                "interval_range": [0, 0],
+                "on_tick": {
+                    "event": "sample:update"
+                }
+            },
+            "tag:block005": {}
+        },
+        "permutations": [
+            {
+                "condition": "q.block_state('sample:north') == 0 && q.block_state('sample:south') == 0 && q.block_state('sample:east') == 0 && q.block_state('sample:west') == 0",
+                "components": {
+                    "minecraft:material_instances": {
+                        "up": {
+                            "texture": "block005",
+                            "render_method": "opaque"
+                        },
+                        "*": {
+                            "texture": "white",
+                            "render_method": "opaque"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_state('sample:north') == 1 && q.block_state('sample:south') == 0 && q.block_state('sample:east') == 0 && q.block_state('sample:west') == 0",
+                "components": {
+                    "minecraft:material_instances": {
+                        "up": {
+                            "texture": "block005_n",
+                            "render_method": "opaque"
+                        },
+                        "*": {
+                            "texture": "white",
+                            "render_method": "opaque"
+                        }
+                    },
+                    "minecraft:transformation": {
+                        "rotation": [0, 0, 0]
+                    }
+                }
+            },
+            {
+                "condition": "q.block_state('sample:north') == 0 && q.block_state('sample:south') == 1 && q.block_state('sample:east') == 0 && q.block_state('sample:west') == 0",
+                "components": {
+                    "minecraft:material_instances": {
+                        "up": {
+                            "texture": "block005_n",
+                            "render_method": "opaque"
+                        },
+                        "*": {
+                            "texture": "white",
+                            "render_method": "opaque"
+                        }
+                    },
+                    "minecraft:transformation": {
+                        "rotation": [0, 180, 0]
+                    }
+                }
+            },
+            {
+                "condition": "q.block_state('sample:north') == 0 && q.block_state('sample:south') == 0 && q.block_state('sample:east') == 1 && q.block_state('sample:west') == 0",
+                "components": {
+                    "minecraft:material_instances": {
+                        "up": {
+                            "texture": "block005_n",
+                            "render_method": "opaque"
+                        },
+                        "*": {
+                            "texture": "white",
+                            "render_method": "opaque"
+                        }
+                    },
+                    "minecraft:transformation": {
+                        "rotation": [0, -90, 0]
+                    }
+                }
+            },
+            {
+                "condition": "q.block_state('sample:north') == 0 && q.block_state('sample:south') == 0 && q.block_state('sample:east') == 0 && q.block_state('sample:west') == 1",
+                "components": {
+                    "minecraft:material_instances": {
+                        "up": {
+                            "texture": "block005_n",
+                            "render_method": "opaque"
+                        },
+                        "*": {
+                            "texture": "white",
+                            "render_method": "opaque"
+                        }
+                    },
+                    "minecraft:transformation": {
+                        "rotation": [0, 90, 0]
+                    }
+                }
+            },
+            {
+                "condition": "q.block_state('sample:north') == 1 && q.block_state('sample:south') == 0 && q.block_state('sample:east') == 1 && q.block_state('sample:west') == 0",
+                "components": {
+                    "minecraft:material_instances": {
+                        "up": {
+                            "texture": "block005_ne",
+                            "render_method": "opaque"
+                        },
+                        "*": {
+                            "texture": "white",
+                            "render_method": "opaque"
+                        }
+                    },
+                    "minecraft:transformation": {
+                        "rotation": [0, 0, 0]
+                    }
+                }
+            },
+            {
+                "condition": "q.block_state('sample:north') == 0 && q.block_state('sample:south') == 1 && q.block_state('sample:east') == 1 && q.block_state('sample:west') == 0",
+                "components": {
+                    "minecraft:material_instances": {
+                        "up": {
+                            "texture": "block005_ne",
+                            "render_method": "opaque"
+                        },
+                        "*": {
+                            "texture": "white",
+                            "render_method": "opaque"
+                        }
+                    },
+                    "minecraft:transformation": {
+                        "rotation": [0, -90, 0]
+                    }
+                }
+            },
+            {
+                "condition": "q.block_state('sample:north') == 0 && q.block_state('sample:south') == 1 && q.block_state('sample:east') == 0 && q.block_state('sample:west') == 1",
+                "components": {
+                    "minecraft:material_instances": {
+                        "up": {
+                            "texture": "block005_ne",
+                            "render_method": "opaque"
+                        },
+                        "*": {
+                            "texture": "white",
+                            "render_method": "opaque"
+                        }
+                    },
+                    "minecraft:transformation": {
+                        "rotation": [0, 180, 0]
+                    }
+                }
+            },
+            {
+                "condition": "q.block_state('sample:north') == 1 && q.block_state('sample:south') == 0 && q.block_state('sample:east') == 0 && q.block_state('sample:west') == 1",
+                "components": {
+                    "minecraft:material_instances": {
+                        "up": {
+                            "texture": "block005_ne",
+                            "render_method": "opaque"
+                        },
+                        "*": {
+                            "texture": "white",
+                            "render_method": "opaque"
+                        }
+                    },
+                    "minecraft:transformation": {
+                        "rotation": [0, 90, 0]
+                    }
+                }
+            },
+            {
+                "condition": "q.block_state('sample:north') == 1 && q.block_state('sample:south') == 1 && q.block_state('sample:east') == 0 && q.block_state('sample:west') == 0",
+                "components": {
+                    "minecraft:material_instances": {
+                        "up": {
+                            "texture": "block005_ns",
+                            "render_method": "opaque"
+                        },
+                        "*": {
+                            "texture": "white",
+                            "render_method": "opaque"
+                        }
+                    },
+                    "minecraft:transformation": {
+                        "rotation": [0, 0, 0]
+                    }
+                }
+            },
+            {
+                "condition": "q.block_state('sample:north') == 0 && q.block_state('sample:south') == 0 && q.block_state('sample:east') == 1 && q.block_state('sample:west') == 1",
+                "components": {
+                    "minecraft:material_instances": {
+                        "up": {
+                            "texture": "block005_ns",
+                            "render_method": "opaque"
+                        },
+                        "*": {
+                            "texture": "white",
+                            "render_method": "opaque"
+                        }
+                    },
+                    "minecraft:transformation": {
+                        "rotation": [0, -90, 0]
+                    }
+                }
+            },
+            {
+                "condition": "q.block_state('sample:north') == 1 && q.block_state('sample:south') == 1 && q.block_state('sample:east') == 1 && q.block_state('sample:west') == 0",
+                "components": {
+                    "minecraft:material_instances": {
+                        "up": {
+                            "texture": "block005_nes",
+                            "render_method": "opaque"
+                        },
+                        "*": {
+                            "texture": "white",
+                            "render_method": "opaque"
+                        }
+                    },
+                    "minecraft:transformation": {
+                        "rotation": [0, 0, 0]
+                    }
+                }
+            },
+            {
+                "condition": "q.block_state('sample:north') == 0 && q.block_state('sample:south') == 1 && q.block_state('sample:east') == 1 && q.block_state('sample:west') == 1",
+                "components": {
+                    "minecraft:material_instances": {
+                        "up": {
+                            "texture": "block005_nes",
+                            "render_method": "opaque"
+                        },
+                        "*": {
+                            "texture": "white",
+                            "render_method": "opaque"
+                        }
+                    },
+                    "minecraft:transformation": {
+                        "rotation": [0, -90, 0]
+                    }
+                }
+            },
+            {
+                "condition": "q.block_state('sample:north') == 1 && q.block_state('sample:south') == 1 && q.block_state('sample:east') == 0 && q.block_state('sample:west') == 1",
+                "components": {
+                    "minecraft:material_instances": {
+                        "up": {
+                            "texture": "block005_nes",
+                            "render_method": "opaque"
+                        },
+                        "*": {
+                            "texture": "white",
+                            "render_method": "opaque"
+                        }
+                    },
+                    "minecraft:transformation": {
+                        "rotation": [0, 180, 0]
+                    }
+                }
+            },
+            {
+                "condition": "q.block_state('sample:north') == 1 && q.block_state('sample:south') == 0 && q.block_state('sample:east') == 1 && q.block_state('sample:west') == 1",
+                "components": {
+                    "minecraft:material_instances": {
+                        "up": {
+                            "texture": "block005_nes",
+                            "render_method": "opaque"
+                        },
+                        "*": {
+                            "texture": "white",
+                            "render_method": "opaque"
+                        }
+                    },
+                    "minecraft:transformation": {
+                        "rotation": [0, 90, 0]
+                    }
+                }
+            },
+            {
+                "condition": "q.block_state('sample:north') == 1 && q.block_state('sample:south') == 1 && q.block_state('sample:east') == 1 && q.block_state('sample:west') == 1",
+                "components": {
+                    "minecraft:material_instances": {
+                        "up": {
+                            "texture": "block005_nesw",
+                            "render_method": "opaque"
+                        },
+                        "*": {
+                            "texture": "white",
+                            "render_method": "opaque"
+                        }
+                    },
+                    "minecraft:transformation": {
+                        "rotation": [0, 0, 0]
+                    }
+                }
+            }
+        ],
+        "events": {
+            "sample:update": {
+                "sequence": [
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,0,-1,'block005')",
+                        "set_block_state": {
+                            "sample:north": 1
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,0,1,'block005')",
+                        "set_block_state": {
+                            "sample:south": 1
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(1,0,0,'block005')",
+                        "set_block_state": {
+                            "sample:east": 1
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(-1,0,0,'block005')",
+                        "set_block_state": {
+                            "sample:west": 1
+                        }
+                    },
+                    {
+                        "condition": "!q.block_neighbor_has_any_tag(0,0,-1,'block005')",
+                        "set_block_state": {
+                            "sample:north": 0
+                        }
+                    },
+                    {
+                        "condition": "!q.block_neighbor_has_any_tag(0,0,1,'block005')",
+                        "set_block_state": {
+                            "sample:south": 0
+                        }
+                    },
+                    {
+                        "condition": "!q.block_neighbor_has_any_tag(1,0,0,'block005')",
+                        "set_block_state": {
+                            "sample:east": 0
+                        }
+                    },
+                    {
+                        "condition": "!q.block_neighbor_has_any_tag(-1,0,0,'block005')",
+                        "set_block_state": {
+                            "sample:west": 0
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

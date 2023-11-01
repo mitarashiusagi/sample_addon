@@ -1,0 +1,14 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "sample:block005",
+                    "weight": 1
+                }
+            ]
+        }
+    ]
+}
